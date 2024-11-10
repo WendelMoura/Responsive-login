@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./media/loginpc.gif);
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    padding: 15px;
+    font-family: "Rubik Moonrocks", sans-serif;
+    font-size: 5vh;
+    color: #3B1E54;
+}
+
+#principal {
+    background-color: #608cc1b7;
+    padding: 3em;
+    width: 75%;
+    border-radius: 80px;
+
+}
+
+label{
+    margin-right: 15px;
+}
+
+#interno {
+    background-color: #CBDCEB;
+    width: 100%;
+    margin: auto;
+    border-radius: 80px;
+}
+
+#login, #password {
+    font-weight: bolder;
+    padding: 10px;
+    font-size: 1.5em;
+    font-family: "DynaPuff", system-ui;
+}
+
+input{
+    text-align: left;
+    padding-left: 2em;
+}
+
+#botões button {
+    margin: 10px;
+    border-radius: 10px;
+    height: 30px;
+    width: 150px;
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#botões button:hover {
+    margin: 10px;
+    border-radius: 10px;
+    height: 40px;
+    width: 165px;
+    transition: 0.5s;
+    background-color: crimson;
+}
+
+#links a{
+    justify-content: space-between;
+    padding: 5px 5px;
+    margin: 25px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+}
+
+#links a:hover{
+    color: blue;
+    border: solid 1px black;
+    border-style: double;
+}
+
+#e-mail, #senha {
+    width: 45em;
+    height: 2.5em;
+}
+
+/* Responsividade tablets */
+
+@media (max-width: 950px) {
+
+    body{
+        background-image: url(./media/logintablet.gif);
+        background-size: cover;         /* Faz a imagem cobrir 100% da tela */
+        background-position: center;    /* Centraliza a imagem */
+        background-repeat: no-repeat;   /* Evita repetição da imagem */
+        background-attachment: fixed;   /* Mantém a imagem fixa ao rolar a página */
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+
+    #e-mail, #senha{
+    width: 45vw;
+    }
+
+    h1{
+        font-size: 5vw;
+    }
+
+    #botões{
+        width: 100%;
+
+    }
+
+    #principal{
+        margin-top: 10vh;
+    }
+}
+
+/* Responsividade celulares */
+
+@media (max-width: 480px) {
+
+    body{
+        background-image: url(./media/logincelular.gif);
+    }
+
+    #e-mail, #senha{
+    width: 45vw;
+    }
+
+    h1{
+        font-size: 5vw;
+    }
+
+    #botões{
+        width: 100%;
+
+    }
+
+    #botões button{
+        width: 15vw;
+        font-size: 4vw;
+        font-weight: bolder;
+        background-color: rgb(106, 222, 52);
+        color: red;
+    }
+
+    #links a{
+        font-size: 5vw;
+    }
+
+
+}
